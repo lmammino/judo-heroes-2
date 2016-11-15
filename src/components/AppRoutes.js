@@ -1,11 +1,11 @@
 'use strict';
 
 import React from 'react';
-import { Router, browserHistory } from 'react-router';
+import { Router, hashHistory } from 'react-router';
 import routes from '../Routes';
 
 const AppRoutes = (props) => (
-  <Router history={browserHistory}
+  <Router history={hashHistory}
     routes={routes}
     onUpdate={() => window.scrollTo(0, 0)}/>
 );

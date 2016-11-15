@@ -75,7 +75,12 @@ footer p {
   max-width: 200px;
   padding: 0;
   position: relative;
+  transition: all .2s ease-in-out;
   width: 100%;
+}
+
+.home .athletes-selector .athlete-preview:hover {
+  transform: scale(1.1);
 }
 
 .home .athletes-selector .athlete-preview img {
