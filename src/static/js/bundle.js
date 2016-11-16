@@ -13869,7 +13869,7 @@ var _Routes2 = _interopRequireDefault(_Routes);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var AppRoutes = function AppRoutes(props) {
-  return _react2.default.createElement(_reactRouter.Router, { history: _reactRouter.hashHistory,
+  return _react2.default.createElement(_reactRouter.Router, { history: _reactRouter.browserHistory,
     routes: _Routes2.default,
     onUpdate: function onUpdate() {
       return window.scrollTo(0, 0);
