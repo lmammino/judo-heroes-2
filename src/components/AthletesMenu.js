@@ -1,10 +1,7 @@
-'use strict';
-
 import React from 'react';
-import { Link } from 'react-router';
-import athletes from '../data/athletes';
+import { Link } from 'react-router-dom';
 
-const AthletesMenu = (props) => (
+const AthletesMenu = ({athletes}) => (
   <nav className="atheletes-menu">
     {athletes.map(athlete => {
       return <Link key={athlete.id} to={`/athlete/${athlete.id}`} activeClassName="active">

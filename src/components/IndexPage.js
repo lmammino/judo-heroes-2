@@ -1,10 +1,7 @@
-'use strict';
-
 import React from 'react';
 import AthletePreview from './AthletePreview';
-import athletes from '../data/athletes';
 
-const IndexPage = (props) => (
+const IndexPage = ({athletes}) => (
   <div className="home">
     <div className="athletes-selector">
       {athletes.map(
