@@ -1,15 +1,17 @@
 {
-  "name": "jh2",
+  "name": "judo-heroes-2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A React application to showcase rendering with Universal JavaScript",
+  "main": "server.js",
   "scripts": {
     "start": "babel-node src/server.js",
-    "start-api": "babel-node src/api-server.js",
-    "build": "webpack"
+    "start:dev": "nodemon --exec babel-node -- src/server.js",
+    "build": "NODE_ENV=production webpack -p",
+    "build:dev": "webpack -d",
+    "build:dev:watch": "webpack -d --watch"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Luciano Mammino",
+  "license": "MIT",
   "dependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
@@ -30,6 +32,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "nodemon": "^1.11.0",
     "webpack": "2.2.1",
     "webpack-dev-server": "2.4.2"
   }
