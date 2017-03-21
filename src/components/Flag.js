@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Flag = (props) => (
+export const Flag = props => (
   <span className="flag">
-    <img className="icon" title={props.name} src={`/img/${props.icon}`}/>
+    <img className="icon" title={props.name} src={`/img/${props.icon}`} alt={`${props.name}'s flag`} />
     {props.showName && <span className="name"> {props.name}</span>}
   </span>
 );

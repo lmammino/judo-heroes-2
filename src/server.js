@@ -1,14 +1,12 @@
-'use strict';
+/* eslint no-console: "off"*/
 
 import path from 'path';
 import { Server } from 'http';
 import Express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { StaticRouter } from 'react-router'
-import routes from './routes';
-import NotFoundPage from './components/NotFoundPage';
-
+import { StaticRouter as Router } from 'react-router-dom';
+import { App } from './components/App';
 
 const app = new Express();
 const server = new Server(app);
@@ -22,12 +20,11 @@ app.use(Express.static(path.join(__dirname, 'static')));
 
 // universal routing and rendering
 app.get('*', (req, res) => {
-
   const context = {};
-  const html = renderToString(
-    <StaticRouter location={req.url} context={context}>
-      {routes}
-    </StaticRouter>
+  const markup = renderToString(
+    <Router location={req.url} context={context}>
+      <App />
+    </Router>,
   );
 
   // context.url will contain the URL to redirect to if a <Redirect> was used
@@ -42,9 +39,9 @@ app.get('*', (req, res) => {
 // start the server
 const port = process.env.PORT || 3000;
 const env = process.env.NODE_ENV || 'production';
-server.listen(port, err => {
+server.listen(port, (err) => {
   if (err) {
     return console.error(err);
   }
-  console.info(`Server running on http://localhost:${port} [${env}]`);
+  return console.info(`Server running on http://localhost:${port} [${env}]`);
 });

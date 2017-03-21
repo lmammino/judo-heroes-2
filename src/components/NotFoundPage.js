@@ -1,7 +1,7 @@
 /* eslint react/forbid-prop-types: "off" */
 
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export class NotFoundPage extends React.Component {
   componentWillMount() {
@@ -19,7 +19,8 @@ export class NotFoundPage extends React.Component {
         <Link to="/">Go back to the main page</Link>
       </p>
     </div>
-  );
-};
+    );
+  }
+}
 
 export default NotFoundPage;
