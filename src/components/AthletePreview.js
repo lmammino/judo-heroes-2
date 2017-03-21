@@ -1,15 +1,13 @@
-'use strict';
-
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
-const AthletePreview = (props) => (
+export const AthletePreview = props => (
   <Link to={`/athlete/${props.id}`}>
     <div className="athlete-preview">
-      <img src={`img/${props.image}`}/>
+      <img src={`img/${props.image}`} alt={`${props.name}'s profile`} />
       <h2 className="name">{props.name}</h2>
       <span className="medals-count">
-        <img src="/img/medal.png"/> {props.medals.length}
+        <img src="/img/medal.png" alt="Medal icon" /> {props.medals.length}
       </span>
     </div>
   </Link>

@@ -1,18 +1,18 @@
-'use strict';
-
 import React from 'react';
 
-const medalTypes = {
-  'G': 'Gold',
-  'S': 'Silver',
-  'B': 'Bronze'
+export const medalTypes = {
+  G: 'Gold',
+  S: 'Silver',
+  B: 'Bronze',
 };
 
-const Medal = (props) => (
+export const Medal = props => (
   <li className="medal">
-    <span className={`symbol symbol-${props.type}`}
-      title={medalTypes[props.type]}>
-        {props.type}
+    <span
+      className={`symbol symbol-${props.type}`}
+      title={medalTypes[props.type]}
+    >
+      {props.type}
     </span>
     <span className="year">{props.year}</span>
     <span className="city"> {props.city}</span>
