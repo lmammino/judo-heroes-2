@@ -51,5 +51,9 @@ server.listen(port, (err) => {
   if (err) {
     return console.error(err);
   }
-  return console.info(`Server running on http://localhost:${port} [${env}]`);
+  return console.info(
+    `
+      Server running on http://localhost:${port} [${env}]
+      Universal rendering: ${process.env.UNIVERSAL ? 'enabled' : 'disabled'}
+    `);
 });

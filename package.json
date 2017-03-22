@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "npm run build && babel-node src/server.js",
-    "start:dev": "nodemon --exec babel-node -- src/server.js",
-    "start:universal": "export UNIVERSAL=true && npm start",
-    "start:dev:universal": "export UNIVERSAL=true && npm start:dev",
+    "start:dev": "export NODE_ENV=development && npm run build:dev && nodemon --exec babel-node -- src/server.js",
+    "start:universal": "export UNIVERSAL=true && npm run start",
+    "start:dev:universal": "export NODE_ENV=development && export UNIVERSAL=true && npm run start:dev",
     "build": "NODE_ENV=production webpack -p",
     "build:dev": "webpack -d",
     "build:dev:watch": "webpack -d --watch"
