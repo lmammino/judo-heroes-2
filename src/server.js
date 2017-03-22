@@ -32,8 +32,8 @@ app.get('*', (req, res) => {
     return res.redirect(302, context.url);
   }
 
-  // TODO manage 404
-  return res.render('index', { markup });
+  const status = context.is404 ? 404 : 200;
+  return res.status(status).render('index', { markup });
 });
 
 // start the server
