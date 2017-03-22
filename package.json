@@ -4,8 +4,10 @@
   "description": "A React application to showcase rendering with Universal JavaScript",
   "main": "server.js",
   "scripts": {
-    "start": "babel-node src/server.js",
+    "start": "npm run build && babel-node src/server.js",
     "start:dev": "nodemon --exec babel-node -- src/server.js",
+    "start:universal": "export UNIVERSAL=true && npm start",
+    "start:dev:universal": "export UNIVERSAL=true && npm start:dev",
     "build": "NODE_ENV=production webpack -p",
     "build:dev": "webpack -d",
     "build:dev:watch": "webpack -d --watch"

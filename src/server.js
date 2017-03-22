@@ -20,19 +20,27 @@ app.use(Express.static(path.join(__dirname, 'static')));
 
 // universal routing and rendering
 app.get('*', (req, res) => {
-  const context = {};
-  const markup = renderToString(
-    <Router location={req.url} context={context}>
-      <App />
-    </Router>,
-  );
+  let markup = '';
+  let status = 200;
 
-  // context.url will contain the URL to redirect to if a <Redirect> was used
-  if (context.url) {
-    return res.redirect(302, context.url);
+  if (process.env.UNIVERSAL) {
+    const context = {};
+    markup = renderToString(
+      <Router location={req.url} context={context}>
+        <App />
+      </Router>,
+    );
+
+    // context.url will contain the URL to redirect to if a <Redirect> was used
+    if (context.url) {
+      return res.redirect(302, context.url);
+    }
+
+    if (context.is404) {
+      status = 404;
+    }
   }
 
-  const status = context.is404 ? 404 : 200;
   return res.status(status).render('index', { markup });
 });
 

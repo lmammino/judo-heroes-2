@@ -21,7 +21,7 @@ export const App = () => (
   <Layout>
     <Switch>
       <Route exact path="/" render={renderIndex} />
-      <Route path="/athlete/:id" render={renderAthlete} />
+      <Route exact path="/athlete/:id" render={renderAthlete} />
       <Route component={NotFoundPage} />
     </Switch>
   </Layout>
