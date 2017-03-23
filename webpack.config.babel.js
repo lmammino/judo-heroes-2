@@ -1,15 +1,12 @@
-'use strict';
-
-import webpack from 'webpack';
 import path from 'path';
 
 const config = {
   entry: {
-    js: './src/app-client.js'
+    js: './src/app-client.js',
   },
   output: {
     path: path.join(__dirname, 'src', 'static', 'js'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -17,12 +14,12 @@ const config = {
         test: path.join(__dirname, 'src'),
         use: {
           loader: 'babel-loader',
-          options: 'cacheDirectory=.babel_cache'
-        }
-      }
-    ]
+          options: 'cacheDirectory=.babel_cache',
+        },
+      },
+    ],
   },
-  plugins: []
+  plugins: [],
 };
 
 export default config;
