@@ -7,11 +7,11 @@ import { NotFoundPage } from './NotFoundPage';
 import athletes from '../data/athletes';
 
 const renderIndex = () => <IndexPage athletes={athletes} />;
-const renderAthlete = ({ match }) => {
+const renderAthlete = ({ match, staticContext }) => {
   const id = match.params.id;
-  const athlete = athletes.filter(current => current.id === id)[0];
+  const athlete = athletes.find(current => current.id === id);
   if (!athlete) {
-    return <NotFoundPage />;
+    return <NotFoundPage staticContext={staticContext} />;
   }
 
   return <AthletePage athlete={athlete} athletes={athletes} />;
