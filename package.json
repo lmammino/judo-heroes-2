@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "babel-loader": "^6.4.1",
-    "babel-node": "^6.5.2",
     "babel-register": "^6.18.0",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
