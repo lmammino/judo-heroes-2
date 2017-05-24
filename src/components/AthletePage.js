@@ -17,7 +17,7 @@ export const AthletePage = ({ athlete, athletes }) => {
         </div>
         <section className="description">
           Olympic medalist from
-          <strong><Flag {...athlete.country} showName="true" /></strong>,
+          &nbsp;<strong><Flag {...athlete.country} showName="true" /></strong>,
           born in {athlete.birth}
           (Find out more on <a href={athlete.link}>Wikipedia</a>).
         </section>
