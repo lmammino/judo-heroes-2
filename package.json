@@ -10,7 +10,9 @@
     "start:dev:universal": "export NODE_ENV=development && export UNIVERSAL=true && npm run start:dev",
     "build": "NODE_ENV=production webpack -p",
     "build:dev": "webpack -d",
-    "build:dev:watch": "webpack -d --watch"
+    "build:dev:watch": "webpack -d --watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Luciano Mammino",
   "license": "MIT",
@@ -23,7 +25,8 @@
     "express": "5.0.0-alpha.5",
     "react": "15.4.2",
     "react-dom": "15.4.2",
-    "react-router-dom": "^4.0.0"
+    "react-router-dom": "^4.0.0",
+    "snyk": "^1.30.1"
   },
   "devDependencies": {
     "babel-loader": "^6.4.1",
@@ -35,5 +38,6 @@
     "eslint-plugin-react": "^6.10.3",
     "nodemon": "^1.11.0",
     "webpack": "2.2.1"
-  }
+  },
+  "snyk": true
 }
