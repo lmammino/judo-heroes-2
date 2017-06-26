@@ -4,7 +4,7 @@
   "description": "A React application to showcase rendering with Universal JavaScript",
   "main": "server.js",
   "scripts": {
-    "start": "npm run build && babel-node src/server-es5.js",
+    "start": "npm run build && node src/server-es5.js",
     "start:dev": "export NODE_ENV=development && npm run build:dev && nodemon --exec babel-node -- src/server.js",
     "start:universal": "export UNIVERSAL=true && npm run start",
     "start:dev:universal": "export NODE_ENV=development && export UNIVERSAL=true && npm run start:dev",
