@@ -3,8 +3,7 @@
 Universal Javascript sample application with React Router 4 and Express 5 (Enhanced version of https://github.com/lmammino/judo-heroes)
 
 [![Build Status](https://travis-ci.org/lmammino/judo-heroes-2.svg?branch=master)](https://travis-ci.org/lmammino/judo-heroes-2)
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[PORT]=3000)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Setup
 
