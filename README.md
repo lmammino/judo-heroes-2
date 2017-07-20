@@ -2,6 +2,8 @@
 
 Universal Javascript sample application with React Router 4 and Express 5 (Enhanced version of https://github.com/lmammino/judo-heroes)
 
+[![Build Status](https://travis-ci.org/lmammino/judo-heroes-2.svg?branch=master)](https://travis-ci.org/lmammino/judo-heroes-2)
+
 ## Setup
 
 ```bash

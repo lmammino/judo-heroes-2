@@ -4,11 +4,13 @@
   "description": "A React application to showcase rendering with Universal JavaScript",
   "main": "server.js",
   "scripts": {
+    "test:lint": "eslint src/",
+    "test": "npm run test:lint",
     "start": "npm run build && node src/server-es5.js",
     "start:dev": "export NODE_ENV=development && npm run build:dev && nodemon --exec babel-node -- src/server.js",
     "start:universal": "export UNIVERSAL=true && npm run start",
     "start:dev:universal": "export NODE_ENV=development && export UNIVERSAL=true && npm run start:dev",
-    "build": "NODE_ENV=production webpack -p",
+    "build": "NODE_ENV=production webpack -p --profile --display-modules --optimize-minimize",
     "build:dev": "webpack -d",
     "build:dev:watch": "webpack -d --watch"
   },
@@ -23,18 +25,18 @@
     "express": "5.0.0-alpha.5",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.2"
   },
   "devDependencies": {
-    "babel-loader": "^7.1.0",
+    "babel-loader": "^7.1.1",
     "babel-register": "^6.24.1",
-    "eslint": "^3.18.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.1.0",
     "nodemon": "^1.11.0",
-    "webpack": "3.0.0",
+    "webpack": "^3.0.0",
     "webpack-node-externals": "^1.6.0"
   }
 }
