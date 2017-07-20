@@ -1,0 +1,7 @@
+{
+  "name": "Judo Heroes 2",
+  "description": "A sample Universal JavaScript application with React and Express",
+  "repository": "https://github.com/lmammino/judo-heroes-2",
+  "logo": "https://raw.githubusercontent.com/lmammino/judo-heroes-2/master/src/static/img/logo-judo-heroes.png",
+  "keywords": ["node", "express", "react", "universal", "javascript"]
+}
