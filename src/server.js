@@ -1,4 +1,4 @@
-/* eslint no-console: "off"*/
+/* eslint no-console: "off" */
 
 import path from 'path';
 import { Server } from 'http';
