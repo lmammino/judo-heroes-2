@@ -1,6 +1,6 @@
 # judo-heroes-2
 
-Universal Javascript sample application with React Router 4 and Express 5 (Enhanced version of https://github.com/lmammino/judo-heroes)
+Universal JavaScript sample application with React Router 4 and Express 5 (Enhanced version of https://github.com/lmammino/judo-heroes)
 
 [![Build Status](https://travis-ci.org/lmammino/judo-heroes-2.svg?branch=master)](https://travis-ci.org/lmammino/judo-heroes-2)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -26,9 +26,9 @@ Available commands to run with `npm run`:
  - `build:dev:watch`: build the dev package in watch mode (listen for changes and re-build immediately)
 
 
- ## Want to know more about Node.js, React and Universal Javascript?
+ ## Want to know more about Node.js, React and Universal JavaScript?
 
- If you want to know more about Universal Javascript and improve your application even more (e.g. by adding Universal Data Retrival using REST APIs) I definitely recommend to read the chapter Universal JavaScript for Web Applications on my book [Node.js Design Patterns Second Edition (Packt)](https://www.nodejsdesignpatterns.com/):
+ If you want to know more about Universal JavaScript and improve your application even more (e.g. by adding Universal Data Retrival using REST APIs) I definitely recommend to read the chapter Universal JavaScript for Web Applications on my book [Node.js Design Patterns Second Edition (Packt)](https://www.nodejsdesignpatterns.com/):
 
  [![Node.js Design Patterns Second Edition by Mario Casciaro and Luciano Mammino](https://cdn.scotch.io/22/v1m65E8Te2tboZO7MvOA_book-cover-nodejs-design-patterns.png)](https://www.nodejsdesignpatterns.com/)
 
