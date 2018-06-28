@@ -14,7 +14,8 @@
     "build:dev": "webpack -d",
     "build:dev:watch": "webpack -d --watch",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Luciano Mammino",
   "license": "MIT",
@@ -28,7 +29,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2",
-    "snyk": "^1.41.1"
+    "snyk": "^1.87.0"
   },
   "devDependencies": {
     "babel-loader": "^7.1.1",
