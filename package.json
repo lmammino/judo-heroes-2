@@ -25,8 +25,8 @@
     "babel-preset-react": "^6.24.1",
     "ejs": "^2.5.2",
     "express": "5.0.0-alpha.5",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-router-dom": "^4.1.2",
     "snyk": "^1.41.1"
   },
