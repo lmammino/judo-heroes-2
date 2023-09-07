@@ -13,8 +13,8 @@
     "build": "NODE_ENV=production webpack -p --profile --display-modules --optimize-minimize",
     "build:dev": "webpack -d",
     "build:dev:watch": "webpack -d --watch",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk-protect": "snyk-protect",
+    "prepublish": "yarn run snyk-protect"
   },
   "author": "Luciano Mammino",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.1.2",
-    "snyk": "^1.41.1"
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-loader": "^7.1.1",

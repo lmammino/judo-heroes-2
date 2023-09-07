@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.25.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -10,3 +10,48 @@ patch:
         patched: '2017-09-28T03:51:10.778Z'
     - express > serve-static > send > debug:
         patched: '2017-09-28T03:51:10.778Z'
+    - babel-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-09-07T14:29:12.479Z'
+        id: 'npm:debug:20170905'
+        path: babel-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug
+  'npm:extend:20180424':
+    - babel-cli > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2023-09-07T14:29:12.479Z'
+        id: 'npm:extend:20180424'
+        path: babel-cli > chokidar > fsevents > node-pre-gyp > request > extend
+  'npm:hoek:20180212':
+    - babel-cli > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2023-09-07T14:29:12.479Z'
+        id: 'npm:hoek:20180212'
+        path: babel-cli > chokidar > fsevents > node-pre-gyp > request > hawk > hoek
+    - babel-cli > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2023-09-07T14:29:12.479Z'
+        id: 'npm:hoek:20180212'
+        path: >-
+          babel-cli > chokidar > fsevents > node-pre-gyp > request > hawk > boom
+          > hoek
+    - babel-cli > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2023-09-07T14:29:12.479Z'
+        id: 'npm:hoek:20180212'
+        path: >-
+          babel-cli > chokidar > fsevents > node-pre-gyp > request > hawk > sntp
+          > hoek
+  'npm:ms:20170412':
+    - babel-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2023-09-07T14:29:12.479Z'
+        id: 'npm:ms:20170412'
+        path: babel-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms
+  'npm:stringstream:20180511':
+    - babel-cli > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2023-09-07T14:29:12.479Z'
+        id: 'npm:stringstream:20180511'
+        path: >-
+          babel-cli > chokidar > fsevents > node-pre-gyp > request >
+          stringstream
+  'npm:tough-cookie:20170905':
+    - babel-cli > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2023-09-07T14:29:12.479Z'
+        id: 'npm:tough-cookie:20170905'
+        path: >-
+          babel-cli > chokidar > fsevents > node-pre-gyp > request >
+          tough-cookie
